@@ -1,0 +1,2 @@
+include ':app', ':pickerfoto'
+rootProject.name='FirstModule'
