@@ -12,14 +12,14 @@ import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.magentotest.Adapter.ImageAdapter
-import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.activity_piker.*
 import java.util.ArrayList
 
 class PickerActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_piker)
 
         var type = intent.getStringExtra(STRING_EXTRA)
         val viewModel = ViewModelProviders.of(this)[BaseViewModel::class.java]
