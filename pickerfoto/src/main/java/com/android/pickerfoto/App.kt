@@ -4,7 +4,7 @@ import android.app.Application
 import android.content.Context
 
 val Context.myApp: App get() = applicationContext as App
-const val TYPE = "TYPE"
+const val STRING_EXTRA = "STRING_EXTRA"
 
 class App : Application() {
 

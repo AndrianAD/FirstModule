@@ -6,7 +6,7 @@
 
     <application>
         android:name=".App"
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".PickerActivity"></activity>
     </application>
 
 </manifest>

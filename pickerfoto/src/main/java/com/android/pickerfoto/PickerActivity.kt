@@ -15,13 +15,13 @@ import com.example.magentotest.Adapter.ImageAdapter
 import kotlinx.android.synthetic.main.activity_main.*
 import java.util.ArrayList
 
-class MainActivity : AppCompatActivity() {
+class PickerActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        var type = intent.getStringExtra(TYPE)
+        var type = intent.getStringExtra(STRING_EXTRA)
         val viewModel = ViewModelProviders.of(this)[BaseViewModel::class.java]
         recyclerView.layoutManager = GridLayoutManager(this, 3)
         viewModel.getImages(type)
@@ -44,7 +44,7 @@ class MainActivity : AppCompatActivity() {
 
         when (item!!.itemId) {
             R.id.add_new_product -> {
-                var intent = Intent(this, MainActivity::class.java)
+                var intent = Intent(this, PickerActivity::class.java)
 
                 var arr = App.selectedImage as ArrayList<out Parcelable>
                 intent.putParcelableArrayListExtra(
